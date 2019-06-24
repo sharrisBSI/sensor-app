@@ -1,4 +1,5 @@
 <div class='top'>
+  
   <a href="https://www.brewerscience.com/" target="_blank">
     <div class="logo">
       <img src="../assets/logo.png" alt="unable to load image" width=58.78 height=47.4>
@@ -6,14 +7,13 @@
   </a>
 
   <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-  </div>
-  
-  <div class="searchbar">
-  
+    <nav>
+      <a routerLink = "/" (click)="navLinkClicked();"><strong>Map</strong></a>
+      <a routerLink = "/about" (click)="navLinkClicked();"><strong>About</strong></a>
+      <a routerLink = "/contact" (click)="navLinkClicked();"><strong>Contact</strong></a>
+      <img id="searchImg" src="../assets/search.png" height="25px" width="25px">
+      <input id="searchParam" type="text" placeholder="Search">
+    </nav>
   </div>
 
 </div>
